@@ -1,0 +1,233 @@
+body {
+   margin: 0;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 20px;
+   color: #1d414c;
+   line-height: 1.8;
+   background-color: #abafb6;
+}
+
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+}
+
+h1 h2 h3 h4 h5 h6 {
+   font-family: 'Kaushan Script', cursive;
+}
+
+h1 {
+   font-size: 3em;
+}
+
+h2 {
+font-size: 2.5em;
+}
+/* container */
+.container {
+   width: 100%;
+   max-width: 1280px;
+   margin: 0 auto;   
+   box-shadow: 10px 10px 30px #566d78;
+}
+
+h3 {
+   padding: 3% 10%;
+   font-size: 2.5em;
+   font-family: 'Kaushan Script', cursive;
+}
+
+a {
+   text-decoration: none;
+   color: #e0e7f1;
+   transition: color 0.2s linear;
+}
+
+a:hover {
+   color: #abafb6;
+   text-decoration: underline;
+}
+
+p {
+   text-indent: 1%;
+}
+
+ /* !nav */
+
+ .nav {
+   position: sticky;
+   top: 0;
+   z-index: 1;
+   width: 80%;
+   height: auto;
+   margin: 0 auto;
+   border-bottom-left-radius:  30%;
+   border-bottom-right-radius: 30%;
+   text-align: center;
+   font-weight: 500;
+   font-size: 0.8em;
+   text-transform: uppercase;
+   background-color: #664b3c;
+   transition: color 0.3s linear;
+ }
+
+ul.header li {
+   display: inline;
+   margin: 1% 1%;   
+}
+
+ul {
+   padding-left: 2%;
+}
+
+ /* !main */
+
+ .container-beginer {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   height: 100vh;
+   /* max-height: 800px; */
+   align-items: center;
+   font-family: 'Kaushan Script', cursive;
+   background-color: #e0e7f1;
+   background: url(../img/mountain_background_main.png) center no-repeat;
+   background-size: cover;
+}
+
+.portriet {
+   margin: 0 auto 20%;
+   width: 70vh;
+}
+
+.portriet img {
+   max-width: 100%;
+   height: auto;
+}
+
+.hello {
+   text-align: center;
+   margin-right: 3%;
+   margin-bottom: 15%;
+}
+
+/* !content */
+
+.container-content {
+   min-height: 60vh;
+   color: #abafb6;
+   background-color: #1d414c; 
+}
+
+.container-content > div {
+   padding: 0% 4% 0%;
+   }
+
+   .container-content > div img {
+      max-width: 6%;
+      height: auto;
+      margin-top: 1%;
+      margin-right: 2%;
+   }
+   
+.container-content:after {
+   content: "";
+   display: block;
+   width: 40vw;
+   height: 2px;
+   margin: 20% auto 0;
+   padding-bottom: 1%;
+   border-radius: 100%;
+   background-color: #abafb6;
+   }
+
+   /* ! code */
+ 
+.code-square {
+   margin: 0 auto;
+   width: 70%;
+   color:#1d414c;
+   border-width:2px;
+   border-style:solid;
+   border-color:#664b3c;
+   background-color:#abafb6;
+   }
+
+   /* !footer */
+
+   .footer-links {
+   box-sizing: border-box;
+   display: block;
+   width: 100%;
+   margin: 0 auto;
+   font-family: 'Kaushan Script', cursive;
+   text-align: center;
+   font-size: 1em;
+   background-color: #abafb6;
+   }
+
+.rs-school {
+   display: inline-block;
+   width: 40%;
+}
+
+.githublogo-footer {
+   width: 40%;
+   margin-top: 2%;
+   /* margin: 2% auto; */
+}
+
+.rs-logo {
+   width: 45%;
+   margin-bottom: 4%;
+   /* margin: 2% auto; */
+}
+
+.requisites-footer {
+   margin-top: 3%;
+}
+   
+/* ! media */
+
+@media (max-width: 767px) {
+   body {
+      font-size: 16px;
+   }
+
+   .portriet {
+      margin: 0 auto 60%;
+   }
+
+   h1 {
+      font-size: 2.5em;
+   }
+
+   h2 {
+      font-size: 2em;
+   }
+
+   h3 {
+      padding: 17% 10%;
+   }
+
+   .hello {
+      margin-right: 1%;
+      margin-bottom: 70%;
+   }
+
+     .container{
+      max-width: 100vw;
+      margin: 0 auto;
+   }
+
+   pre {
+      font-size: 0.6em;
+      padding: 3px;
+   }
+
+   .code-square {
+      width: 95%;
+   }
+}
